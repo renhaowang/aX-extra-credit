@@ -1,0 +1,38 @@
+---
+title: "London Bike Sharing Report"
+author: "Renhao Wang"
+date: "2019/12/2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE)
+source("analysis.R")
+```
+
+## Data
+The data set I used is from kaggle, the original data set name was "London bike sharing dataset". The researcher's purpose was to predict informations about future bike shares. In this report, I focused on the time of London bike sharing everyday and difference between seasons.
+
+
+## Bike shares in everyday's life
+```{r firstgraph, echo=FALSE}
+first_graph
+```
+
+From the graph above, we could observe that the peaks of bike sharing are 8:00 AM and 5-6:00 PM. I think this is because people need transportation when they go to work and go back home, which are around these times.
+
+## Bike sharing in different seasons
+```{r secondgraph, echo=FALSE}
+second_graph
+```
+
+Although the first graph shows some information about bike sharing between seasons, this graph shows almost the same information but more precise. We could tell summer has the highest bike sharing and winter has the lowest. I think this happens because summer is hot and people would like to go out and play. However, in winter, especially in London, is very cold and moist. People could get injured if they ride bikes during winter.
+
+
+
+## Summary
+As a conclusion, I think people who ride sharing bikes and bike sharing companies could make some predictions and changes from my report. First, winter has the least demand of bikes. So companies could put less bikes out on the street and save some budget for summer. Second, people who need to ride sharing bike could avoid the peak by observe my graphs. They could rent bikes before or after those peak times and rent a bike easily without waiting for a bike to return.
+
+## Reflective Statement
+By doing project like this, I learned more about packages like "ggplot2" as well as learning R language. In the future, I will do more reseach and report on things I care more about, and I wish my report or observations could provide excellent and useful informations to other people.
